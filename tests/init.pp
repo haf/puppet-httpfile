@@ -1,1 +1,1 @@
-include puppet-httpfile
+include httpfile

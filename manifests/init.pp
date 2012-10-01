@@ -9,9 +9,8 @@
 # Requires:
 #
 # Sample Usage:
+#   No usage of the puppet class, only puppet resource types: 'httpfile'.
 #
 # [Remember: No empty lines between comments and class definition]
-class puppet-httpfile {
-
-
+class httpfile {
 }
