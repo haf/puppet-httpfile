@@ -1,11 +1,9 @@
-name    'xyz-puppet-httpfile'
-version ''
-source ''
-author 'xyz'
+name 'haf-httpfile'
+version '0.0.1'
+
+author 'Henrik Feldt'
 license ''
+project_page ''
+source ''
 summary ''
 description ''
-project_page ''
-
-## Add dependencies, if any:
-# dependency 'username/name', '>= 1.2.0'
