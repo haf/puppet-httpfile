@@ -11,3 +11,8 @@ httpfile { '/tmp/myfile.deb':
 ```
 
 
+## Future features thought of:
+
+ * Hash provider rather than hard-coded SHA2
+ * E-tag support
+ * Better STAT-support to avoid hashing the file over and over.
