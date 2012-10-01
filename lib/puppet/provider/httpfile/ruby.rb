@@ -15,6 +15,7 @@ Puppet::Type.type(:httpfile).provide(:ruby) do
     if resource.parameter(:hash).was_uri then
       h = resource[:hash]
       # REVISIT: make extendable for other file formats
+      info "hash '#{h}' was recognized as URI, trying to download"
       @hash = Net::HTTP.get(h).split(' ').first
     else
       @hash = resource[:hash]
