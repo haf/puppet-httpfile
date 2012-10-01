@@ -59,7 +59,7 @@ Puppet::Type.newtype(:httpfile) do
       return @is_uri = true if v.is_a? URI
       
       begin
-	doesnt_only_consist_of_hash_chars = !(v ~= /^[0-9a-f]+$/)
+	doesnt_only_consist_of_hash_chars = !(v =~ /^[0-9a-f]+$/)
         @is_uri = doesnt_only_consist_of_hash_chars
       rescue URI::InvalidURIError => e
         @is_uri = false
